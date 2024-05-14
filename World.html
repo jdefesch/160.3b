@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Change a point color</title>
+    </head>
+
+    <body onload="main()">
+        <div style="width: fit-content;float: right;">
+            <canvas id="webgl" width="500" height="500"> Please use a browser that supports "canvas" </canvas>
+            <br />
+
+            <p id="performance"></p>
+
+            <label>Camera Angle:</label>
+            <input type="range" id="camera-angle" min="0" max="90" value="0" />
+            <br />
+
+            <label>Yellow:</label>
+            <input type="range" id="yellow-angle" min="0" max="90" value="0" />
+            <br />
+            <label>Blue:</label>
+            <input type="range" id="blue-angle" min="0" max="90" value="0" />
+            <br />
+
+            <button id="enable-animation">On</button>
+            <button id="disable-animation">Off</button>
+        </div>
+
+        <script src="./lib/webgl-utils.js"></script>
+        <script src="./lib/webgl-debug.js"></script>
+        <script src="./lib/cuon-utils.js"></script>
+        <script src="./lib/cuon-matrix.js"></script>
+        <script src="Triangle.js"></script>
+        <script src="Cube.js"></script>
+        <script src="Camera.js"></script>
+        <script src="World.js"></script>
+    </body>
+</html>
